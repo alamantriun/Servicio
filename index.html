@@ -266,6 +266,55 @@
   }
 
   /* ═══════════════════════════════════════════
+     DOMINIOS Y SUS BENEFICIOS
+  ═══════════════════════════════════════════ */
+  #dominios {
+    position: relative; z-index: 1;
+    background: var(--crema);
+    padding: 80px 24px;
+  }
+  .dominios-wrap {
+    max-width: 900px; margin: 0 auto;
+    display: flex; flex-direction: column; gap: 32px;
+  }
+  .dominios-header { text-align: center; margin-bottom: 24px; }
+  .dominios-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+  }
+  .dom-card {
+    background: #fff; border-radius: 16px; padding: 32px 24px;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,.03);
+    text-align: center;
+  }
+  .dom-ext {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; font-weight: 700; color: var(--verde-oscuro);
+    line-height: 1; margin-bottom: 8px;
+  }
+  .dom-price {
+    font-size: 1.1rem; font-weight: 600; color: var(--ambar);
+    margin-bottom: 16px;
+  }
+  .dom-desc {
+    font-size: .85rem; color: var(--gris); line-height: 1.6;
+  }
+  .dom-benefits {
+    background: var(--verde-medio); color: var(--crema);
+    border-radius: 20px; padding: 40px;
+    margin-top: 16px;
+    box-shadow: 0 12px 30px rgba(13,27,30,.15);
+  }
+  .dom-benefits h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; margin-bottom: 24px; color: var(--ambar-claro);
+  }
+  .dom-benefits ul { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .dom-benefits li { font-size: .95rem; display: flex; gap: 12px; align-items: flex-start; line-height: 1.5; color: rgba(255,255,255,.9); }
+  .dom-benefits li::before { content: '✓'; color: var(--ambar-claro); font-weight: bold; font-size: 1.1rem; margin-top: -2px; }
+
+  /* ═══════════════════════════════════════════
      SECTION 3 — POR QUÉ VALE
   ═══════════════════════════════════════════ */
   #vale {
@@ -610,6 +659,45 @@
       <div class="feature-icon">📊</div>
       <div class="feature-name">Análisis de interacción</div>
       <p class="feature-desc">Integramos herramientas (como Hotjar) que te permiten ver grabaciones y cómo interactúan los clientes con la página para mejorar la experiencia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ DOMINIOS ═══════════════════════ -->
+<section id="dominios">
+  <div class="dominios-wrap">
+    <div class="dominios-header reveal">
+      <span class="section-eyebrow">Tu Identidad en Internet</span>
+      <h2 class="section-title">¿Qué es el dominio<br><em>y por qué importa?</em></h2>
+      <p style="margin-top:16px; color:var(--gris); max-width:600px; margin-inline:auto; line-height:1.6; font-size:0.95rem;">El dominio es el nombre único de tu negocio en internet (ej: <strong>glampingculumpulos.com</strong>). Es un costo variable que se paga <strong>anualmente</strong>. Aquí tienes algunos ejemplos de las terminaciones más comunes y sus precios aproximados:</p>
+    </div>
+
+    <div class="dominios-grid">
+      <div class="dom-card reveal reveal-delay-1">
+        <div class="dom-ext">.com</div>
+        <div class="dom-price">~$60.000 / año</div>
+        <div class="dom-desc">La opción más popular a nivel mundial. Genera confianza inmediata en cualquier turista, sea nacional o extranjero.</div>
+      </div>
+      <div class="dom-card reveal reveal-delay-2">
+        <div class="dom-ext">.co</div>
+        <div class="dom-price">~$150.000 / año</div>
+        <div class="dom-desc">El dominio oficial de Colombia. Ideal si quieres resaltar que eres una empresa 100% local y nacional.</div>
+      </div>
+      <div class="dom-card reveal reveal-delay-3">
+        <div class="dom-ext">.net / .info</div>
+        <div class="dom-price">~$70.000 / año</div>
+        <div class="dom-desc">Excelentes alternativas en caso de que el nombre principal que deseas ya se encuentre ocupado en .com.</div>
+      </div>
+    </div>
+
+    <div class="dom-benefits reveal">
+      <h4>Beneficios clave de tener tu propio dominio:</h4>
+      <ul>
+        <li><strong>Posicionamiento en Google (SEO):</strong> Al tener tu nombre oficial, Google te pondrá en los primeros lugares cuando busquen tu negocio o turismo en la zona.</li>
+        <li><strong>Profesionalismo y Confianza:</strong> Un enlace propio como "tumarca.com" genera muchísima más credibilidad y prestigio que un perfil de redes sociales o enlaces gratuitos.</li>
+        <li><strong>Propiedad absoluta:</strong> Ese nombre en internet será legalmente tuyo y de tu empresa durante todo el año que lo pagues. Nadie más podrá usarlo.</li>
+        <li><strong>Fácil de recordar:</strong> Es mucho más fácil que un turista te recomiende y te encuentre directamente si tu dirección es sencilla y exacta.</li>
+      </ul>
     </div>
   </div>
 </section>
